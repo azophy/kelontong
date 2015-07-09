@@ -1,0 +1,252 @@
+*{
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+}
+body{
+    background: #efefef;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+a:hover{
+    text-decoration: underline;
+    color: #0000cc;
+}
+h1{
+    font-size: 36px;
+    margin: 0;
+}
+h2{
+    font-size: 24px;
+}
+p {
+	margin: 3px;
+	padding: 0;
+}
+
+/* BASIC LAYOUT */
+#wrapper{
+    width: 1100px;
+    margin: auto;
+    background: #fff;
+}
+#header{
+    height: 50px;
+    background: #cdf;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+#menubar {
+	background: #ccc;
+	height: 23px;
+	padding: 1px;
+}
+#content {
+	width: 1050px;
+	padding: 10px;
+}
+#footer {
+	background: #bbb;
+}
+#footer p {
+	text-align: center;
+	padding: 5px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 900;
+}
+
+/*	Multi-Purpose Framing Divisor */
+div.box {
+	clear: both;
+	padding: 5px;
+	background: #E5E5E5;
+	border: 1px solid #BFBFBF;
+	overflow: hidden;
+	width: 100%;
+}
+div.row {
+	clear: both;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+div.column {
+	float: left;
+	margin-right: 15px;
+	padding: auto;
+}
+div.column-right {
+	float: right;
+	padding: auto;
+}
+
+/* Form layouting */
+form div.row {
+	clear: both;
+	padding-top: 5px;
+}
+form div.row label {
+	float: left;
+	margin-right: 5px;
+	text-align: right;
+	padding-top: 5px;
+}
+form div.row input, form div.row select, form div.row textarea {
+	float: left;
+	text-align: left;
+}
+form .ajax_label {
+	margin-left: 10px;
+	padding-top: 2px;
+}
+	
+/* Form style */
+input, textarea {
+	border: 1px solid #bfbfbf;
+	margin: 3px;
+	padding: 2px;
+	width: 175px;
+}
+input[type="submit"],input[type="button"] {
+	width: auto;
+}
+input[disabled], textarea[disabled] {
+	color: black;
+}
+
+/* Table styling */
+table {
+	border-collapse: collapse;
+	font-family: sans-serif;
+	border: 1px solid grey;
+	
+}
+table a {
+	color: white;
+	text-decoration: none;
+}
+tr {
+	border-bottom: 1px solid #BFBFBF;
+	text-align: center;
+	cursor: pointer;
+}
+tr.odd {
+	background: white;
+}
+tr.even {
+	background-color: #E5E5E5;
+}
+tr.ruled {
+	background: #4D4D4D;
+	color: white;
+}
+	th {
+		background: #7F7F7F;
+		color: white;
+		padding: 3px;
+	}
+	td { 
+		padding: 3px; 
+	}
+		
+/*	Taken from articel: "How To: Deploying Suckerfish Dropdown Menus"
+	Version 1.0 - 7/20/2006
+	http://www.deansabatino.com/2006/07/20/96/ 
+	
+	Modified by: Abdurrahman Shofy Adianto - June 2011 
+	--------------------------
+	We begin by styling the main navigation on the page... 
+	-------------------------- 
+	Overall main navigation styles 
+
+	If you need to have a second set of drop menus on the same page (No!!!),
+	they need to have a set of styles as well. If they need to look
+	the same, you could fold these references to #menu into the
+	styles above. Otherwise - a separate CSS file would be the way
+	to go. I've included them here for this example...  */
+
+#menu, #menu ul {
+	float: left;
+	list-style: none;
+	line-height: 1em;
+	color: #000;
+	background-color: transparent;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	z-index: 10;
+}
+/* -------------------------- */
+/* Here are the top navigation links */
+#menu a {
+	display: block;
+	padding: 5px 20px;
+	color: #000;	
+	background-color: #ccc;
+	text-decoration: none;
+}
+#menu a.top {
+	text-align: left;
+	font-size: 1em;
+	border-right: 1px solid white;
+}
+#menu li {
+	float: left;
+	padding: 0;
+}
+/* -------------------------- */
+/* The dropdown links lists */
+#menu li ul {
+	position: absolute;
+	left: -999em;
+	height: auto;
+	width: 125px; 
+	font-weight: normal;
+	border: 1px solid #999;
+	background-color: #ccc;
+	margin: 0;
+}
+#menu li li {
+	padding: 0;
+}
+#menu li ul a {
+	padding: 5px 10px;
+	width: 105px;
+	* html width: 100px;
+}
+#menu li:hover ul ul, #menu li:hover ul ul ul, #menu li.sfhover1 ul ul, #menu li.sfhover1 ul ul ul {
+	left: -999em;
+}
+#menu li:hover ul, #menu li li:hover ul, #menu li li li:hover ul, #menu li.sfhover1 ul, #menu li li.sfhover1 ul, #menu li li li.sfhover1 ul {
+	left: auto;
+}
+
+/* Special attributes for wider menu list */
+#menu li ul.wide {
+	width: 170px;
+}
+#menu li ul.wide a {
+	width: 150px;
+	* html width: 100px;
+}
+
+/* -------------------------- */
+/* The background and color of the main nav link while looking at the dropdown */
+#menu li:hover a.top, #menu li.sfhover1 a.top {
+	color: #fff;
+	background-color: #1E90FF;
+}
+/* -------------------------- */
+/* The dropdown links list colors */
+#menu li ul.under a {
+	color: #000;
+}
+#menu li ul.under a:hover {
+	background: #1E90FF;
+	color: #fff;
+}
+/* -------------------------- */
