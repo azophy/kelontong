@@ -26,6 +26,10 @@ membuat software ini semakin baik, silahkan hubungi saya di: azophy@gmail.com.
 3. Ubah nilai-nilai di file 'script/config.php'.
 4. Aplikasi Kelontong Alpha sudah siap di jalankan!
 
+## Login default kelontong
+Username: test
+password: test
+
 ## KNOWN BUGS
 -  bug stok barang di transaksi pembelian & penjualan
 
