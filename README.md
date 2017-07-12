@@ -2,6 +2,19 @@
 Version Alpha
 22rd of July, 2011
 
+    WARNING
+    (13 Juli 2017)
+    
+    Setelah lama tidak saya sentuh, ternyata kode-kode yang ada di sini mayoritas sudah deprecated (tidak bisa dipakai) di versi-versi PHP yang cukup baru. Sehingga agar dapat digunakan, kode-kode di sini semuanya harus ditulis ulang, atau dilakukan perubahan besar-besaran agar dapat digunakan.
+
+    artinya: MULAI HARI INI KELONTONG TIDAK DAPAT DIGUNAKAN. 
+
+    saya tahu mungkin ada sebagian dari anda yang sudah berharap dapat menggunakan aplikasi ini, namun saya memohon maaf karena saya tidak bisa menjanjikan untuk dapat memperbaiki aplikasi ini dalam waktu cepat. saya akan menguasahakan untuk dapat melakukan perbaikan agar aplikasi ini dapat digunakan lagi, namun saya sendiri saat ini memiliki beberapa tanggung jawab lain sehingga sekali lagi saya tidak bisa menjamin perbaikan akan dilakukan dalam waktu dekat.
+
+    Jika anda seorang programmer, saya sangat menerima bantuan yang bisa anda lakukan. Silahkan lakukan fork dan pull-request ke saya jika anda bersedia. Semua bantuan insya Allah akan saya terima dengan tangan terbuka .
+
+    Sekian
+
 Ini adalah versi aplha dari software KELONTONG. Software ini diluncurkan dengan lisesnsi GPL yang
 bisa dilihat di file LICENSE.txt. Anda boleh menggunakan aplikasi ini dengan gratis. Jika anda 
 menemukan bug, atau memiliki kritik, saran, ide, atau perbaikan/pengembangan lainnya yang bisa
